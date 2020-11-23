@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer logs"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_light"/>
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="wrap_content"
+        style="@style/TextviewTheme"
+        android:layout_height="wrap_content"
+        android:text="@string/x_value" />
+
+    <TextView
+        android:id="@+id/y"
+        android:layout_width="wrap_content"
+        style="@style/TextviewTheme"
+        android:layout_height="wrap_content"
+        android:text="@string/y_value" />
+
+    <TextView
+        android:id="@+id/z"
+        android:layout_width="wrap_content"
+        style="@style/TextviewTheme"
+        android:layout_height="wrap_content"
+        android:text="@string/z_value"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:id="@+id/btnStart"
+        style="@style/TextviewTheme"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorOrange"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/tvX"
+        android:text="Saved logs"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="14sp"
+        android:background="@color/colorGray_lite2"
+        android:padding="3dp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rvSavedList"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+
+</LinearLayout>
